@@ -1,113 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abdoul Akrimou Sow - Développeur Junior</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <title>Awesome Landing Page</title>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="navbar container">
-      <div class="logo">
-        <h2>Header Logo</h2>
-      </div>
-      <nav class="navlinks">
-        <ul>
-          <li><a href="#">header link one</a></li>
-          <li><a href="#">header link two</a></li>
-          <li><a href="#">header link three</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <div class="header-content container">
-      <div class="intro-text">
-        <h1>This website is awesome</h1>
-        <p class="subtext">
-          This website has some subtext that goes here under the main title.
-          It’s a smaller font and the color is lower contrast.
-        </p>
-        <button class="btn btn-primary">Sign up</button>
-      </div>
-      <div class="intro-image">
-        <img
-          src="https://tse1.mm.bing.net/th/id/OIP.siD0hKE8SrZwfxtBTd4HLwHaEK?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3"
-          alt="Placeholder Illustration"
-        />
-      </div>
+  <!-- NAVBAR -->
+  <header class="header">
+    <div class="container nav-container">
+      <h1 class="logo">Akrimou<span class="highlight">Dev</span></h1>
+      <nav class="nav">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#skills">Compétences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
     </div>
   </header>
 
-  <!-- Features -->
-  <section class="features container">
-    <h2>Some random information</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <div class="feature-illustration">
-          <img
-            src="https://tse1.mm.bing.net/th/id/OIP.siD0hKE8SrZwfxtBTd4HLwHaEK?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3"
-            alt="Illustration 1"
-          />
-        </div>
-        <p class="feature-subtext">
-          this is some subtext under an illustration or image
-        </p>
+  <!-- HERO SECTION -->
+  <section class="hero container" id="about">
+    <div class="hero-text">
+      <h2>Salut, je suis <span class="highlight">Abdoul Akrimou Sow</span></h2>
+      <p>Développeur Web Junior en apprentissage, passionné par la création d'interfaces modernes, performantes et accessibles.</p>
+      <a href="#contact" class="btn btn-primary">Me contacter</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Portrait Abdoul Akrimou Sow" />
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills container" id="skills">
+    <h2>Mes compétences</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+        <p>HTML5</p>
       </div>
-      <div class="feature-item">
-        <div class="feature-illustration">
-          <img
-            src="https://tse1.mm.bing.net/th/id/OIP.siD0hKE8SrZwfxtBTd4HLwHaEK?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3"
-            alt="Illustration 2"
-          />
-        </div>
-        <p class="feature-subtext">
-          this is some subtext under an illustration or image
-        </p>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+        <p>CSS3</p>
       </div>
-      <div class="feature-item">
-        <div class="feature-illustration">
-          <img
-            src="https://tse1.mm.bing.net/th/id/OIP.siD0hKE8SrZwfxtBTd4HLwHaEK?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3"
-            alt="Illustration 3"
-          />
-        </div>
-        <p class="feature-subtext">
-          this is some subtext under an illustration or image
-        </p>
+      <div class="skill-card">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+        <p>JavaScript</p>
       </div>
     </div>
   </section>
 
-  <!-- Testimonial / Quote -->
-  <section class="testimonial">
-    <div class="container">
-      <blockquote>
-        “This is an inspiring quote, or a testimonial from a customer. Maybe it’s
-        just filling up space, or maybe people will actually read it. Who knows?
-        All I know is that it looks nice.”
-      </blockquote>
-      <p class="author">— Thor, God of Thunder</p>
+  <!-- PROJECTS -->
+  <section class="projects container" id="projects">
+    <h2>Quelques projets</h2>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Portfolio personnel</h3>
+        <p>Un site web responsive pour présenter mes projets et compétences.</p>
+        <a href="https://github.com/ton-utilisateur/portfolio" target="_blank" rel="noopener" class="btn btn-secondary">Voir sur GitHub</a>
+      </article>
+      <article class="project-card">
+        <h3>To-Do List</h3>
+        <p>Application JavaScript simple pour gérer ses tâches quotidiennes.</p>
+        <a href="https://github.com/ton-utilisateur/todo-list" target="_blank" rel="noopener" class="btn btn-secondary">Voir sur GitHub</a>
+      </article>
+      <article class="project-card">
+        <h3>Site e-commerce</h3>
+        <p>Prototype d’un site de vente en ligne avec panier fonctionnel.</p>
+        <a href="https://github.com/ton-utilisateur/ecommerce" target="_blank" rel="noopener" class="btn btn-secondary">Voir sur GitHub</a>
+      </article>
     </div>
   </section>
 
-  <!-- Call to Action -->
-  <section class="call-to-action container">
-    <div class="cta-content">
-      <p class="cta-title">Call to action! It’s time!</p>
-      <p class="cta-text">
-        Sign up for our product by clicking that button right over there!
-      </p>
-    </div>
-    <button class="btn btn-secondary">Sign up</button>
+  <!-- CONTACT -->
+  <section class="contact container" id="contact">
+    <h2>Contactez-moi</h2>
+    <form id="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Nom complet</label>
+        <input type="text" id="name" name="name" required placeholder="Ton nom complet" />
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="email">Adresse e-mail</label>
+        <input type="email" id="email" name="email" required placeholder="exemple@mail.com" />
+        <small class="error-message"></small>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Ton message ici..."></textarea>
+        <small class="error-message"></small>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      <p class="form-success" aria-live="polite"></p>
+    </form>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer>
-    <div class="container">
-      <p>Copyright © The Odin Project 2021</p>
-    </div>
+    <p>&copy; 2025 Abdoul Akrimou Sow - Développeur Junior en apprentissage</p>
   </footer>
+
+  <script>
+    // Toggle mobile nav menu
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav-active');
+      navToggle.classList.toggle('open');
+    });
+
+    // Form validation & mock submission
+    const form = document.getElementById('contact-form');
+    const successMsg = form.querySelector('.form-success');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      let valid = true;
+
+      // Clear previous errors
+      form.querySelectorAll('.error-message').forEach(el => el.textContent = '');
+
+      // Validate name
+      const name = form.name.value.trim();
+      if (name.length < 2) {
+        form.name.nextElementSibling.textContent = "Le nom doit contenir au moins 2 caractères.";
+        valid = false;
+      }
+
+      // Validate email (simple regex)
+      const email = form.email.value.trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        form.email.nextElementSibling.textContent = "Adresse e-mail invalide.";
+        valid = false;
+      }
+
+      // Validate message
+      const message = form.message.value.trim();
+      if (message.length < 10) {
+        form.message.nextElementSibling.textContent = "Le message doit contenir au moins 10 caractères.";
+        valid = false;
+      }
+
+      if (!valid) return;
+
+      // Simulate sending...
+      successMsg.textContent = "Envoi en cours...";
+      setTimeout(() => {
+        successMsg.textContent = "Merci ! Votre message a bien été envoyé.";
+        form.reset();
+      }, 1500);
+    });
+  </script>
+
 </body>
 </html>
